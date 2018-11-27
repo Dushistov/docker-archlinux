@@ -16,6 +16,9 @@ rm -rf /usr/share/man/* /usr/share/info /usr/share/doc /usr/share/gtk-doc \
  /usr/share/glib-2.0 /usr/share/bash-completion /usr/share/aclocal \
  /usr/share/emacs
 
+# no need runtime
+rm -f /usr/lib/libgfortran.so* /usr/lib/libgo.so*
+
 # clean tmp folders
 rm -rf /tmp/*
 rm -rf /var/tmp/*
