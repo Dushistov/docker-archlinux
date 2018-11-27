@@ -4,6 +4,10 @@
 yes | LC_ALL=en_US.UTF-8 pacman -Scc
 #pacman --noconfirm -Scc
 
+#openssl requires perl, but really there is no need for it
+#see https://bugs.archlinux.org/task/54887
+yes | LC_ALL=en_US.UTF-8 pacman -Rdd perl
+
 rm -fr /usr/include
 
 # remove all the manual files

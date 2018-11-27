@@ -39,6 +39,7 @@ PKGIGNORE=(
     usbutils
     vi
     xfsprogs
+    texinfo
 )
 
 # these are the packages in the base group
@@ -125,9 +126,6 @@ useradd -u 33 -d /srv/http http
 # this allows us to source /etc/profile from every RUN command so that 
 # PATH is always what we expect it to be by setting ENV=/etc/profile
 # in the Dockerfile
-pacman -Syyu --noconfirm --noprogressbar zsh
-rm /usr/bin/sh
-ln -s /usr/bin/zsh /usr/bin/sh
 
 # setup gnupg
 echo "keyserver hkp://keys.gnupg.net" >> /usr/share/gnupg/gpg-conf.skel
