@@ -136,6 +136,8 @@ cp /usr/share/gnupg/gpg-conf.skel /etc/skel/.gnupg/gpg.conf
 # copy over the skel files for the root user
 cp -r $(find /etc/skel -name ".*") /root
 
+pacman -S --noconfirm --needed --noprogressbar qt5-base qt5-svg qt5-tools rsync
+
 # set the root user's password to blank
 #echo "root:" | chpasswd -e
 

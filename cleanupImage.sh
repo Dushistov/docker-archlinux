@@ -17,7 +17,10 @@ rm -rf /usr/share/man/* /usr/share/info /usr/share/doc /usr/share/gtk-doc \
  /usr/share/emacs
 
 # no need runtime
-rm -f /usr/lib/libgfortran.so* /usr/lib/libgo.so*
+rm -f /usr/lib/libgfortran.so* /usr/lib/libgo.so* \
+  /usr/lib/libLLVM-7.so
+
+#  /usr/share/locale /usr/share/i18n/locales \
 
 # clean tmp folders
 rm -rf /tmp/*
